@@ -1,6 +1,6 @@
 var nameInput = $("#name-input")
 var sortButton = $("#sort-button")
-var enrolledStudentList = $(".enrolled-students")
+var enrolledStudentList = $("#enrolled-students")
 
 var houses = [
   "Ravenclaw",
@@ -9,13 +9,15 @@ var houses = [
   "Slytherin"
 ]
 
+var index = "unchosen"
+
 function chooseRandomHouse() {
-  var index = Math.floor(Math.random() * houses.length)
+   index = Math.floor(Math.random() * houses.length)
   return houses[index]
 }
 
 sortButton.click(function() {
-  var name = nameInput.howDoIGetTheValue()
+  var name = nameInput.val()
    chooseRandomHouse()
   })
 
