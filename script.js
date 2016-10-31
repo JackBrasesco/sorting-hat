@@ -17,8 +17,7 @@ function chooseRandomHouse() {
 
 sortButton.click(function() {
   var name = nameInput.howDoIGetTheValue()
-
-    \ chooseRandomHouse()
+   chooseRandomHouse()
   })
 })
 
