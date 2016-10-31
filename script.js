@@ -19,7 +19,7 @@ sortButton.click(function() {
   var name = nameInput.howDoIGetTheValue()
    chooseRandomHouse()
   })
-})
+
 
 onNewListItem("enrolledStudents", function(student) {
   console.log("student", student)
