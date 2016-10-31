@@ -11,7 +11,6 @@ var houses = [
 
 function chooseRandomHouse() {
   var index = Math.floor(Math.random() * houses.length)
-
   return houses[index]
 }
 
@@ -21,11 +20,7 @@ sortButton.click(function() {
   })
 
 
-onNewListItem("enrolledStudents", function(student) {
-  console.log("student", student)
-
   var newStudentElement = $("<div></div>")
   // what here?
 
   enrolledStudentList.append(newStudentElement)
-})
