@@ -18,9 +18,7 @@ function chooseRandomHouse() {
 sortButton.click(function() {
   var name = nameInput.howDoIGetTheValue()
 
-  addListItem("enrolledStudents", {
-    name: name,
-    house: chooseRandomHouse()
+    \ chooseRandomHouse()
   })
 })
 
