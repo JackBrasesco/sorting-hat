@@ -11,9 +11,11 @@ var houses = [
 
 var index = "unchosen"
 
+var name = "unkno
+
 function chooseRandomHouse() {
-   index = Math.floor(Math.random() * houses.length)
-  return houses[index]
+  index = houses[Math.floor(Math.random()*houses.length)]
+  enrolledStudentList.html(index)
 }
 
 sortButton.click(function() {
